@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Ingrese el texto aquí</h2>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="info">
+                <p>⚠️ Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button class="encrypt-btn" onclick="encryptText()">Encriptar</button>
+                <button class="decrypt-btn" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="output-container">
+                <img src="image.png" alt="No message found">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea id="outputText" readonly></textarea>
+            <button onclick="copyText()">Copiar al portapapeles</button>
+        </div>
+    </div>
+    <footer>
+        <p>Alina R. Puca Pelozo &copy; 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
